@@ -22,8 +22,6 @@ class DatabaseSeeder extends Seeder
             StarshipClassSeeder::class
         ]);
 
-        $this->call([
-            StarshipSeeder::class
-        ]);
+        
     }
 }

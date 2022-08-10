@@ -16,9 +16,9 @@ class StarshipSeeder extends Seeder
     public function run()
     {
         //
-        Starship::factory()
-        ->count(130)
+      /*  Starship::factory()
+        ->count(20)
        // ->hasStarshipClass(1)
-        ->create();
+        ->create();*/
     }
 }

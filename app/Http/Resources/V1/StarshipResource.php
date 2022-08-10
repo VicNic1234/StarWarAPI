@@ -22,6 +22,7 @@ class StarshipResource extends JsonResource
             'crewSize' => $this->crew_size,
             'cost' => $this->cost,
             'color' => $this->color,
+            'class' => new StarshipClassResource($this->class),
 
         ]; 
     }

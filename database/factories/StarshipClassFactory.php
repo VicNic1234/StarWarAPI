@@ -3,6 +3,8 @@
 namespace Database\Factories;
 
 use Illuminate\Database\Eloquent\Factories\Factory;
+use App\Models\StarshipClass;
+use App\Models\Starship;
 
 class StarshipClassFactory extends Factory
 {
