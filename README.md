@@ -37,7 +37,7 @@ You will need to be inside that project file to enter all of the rest of the com
 
 
 If you don’t understand anything about git or branches than just use the code snippet exactly as it reads here and it will work just fine.
-### 4. Install Composer Dependencies
+### 3. Install Composer Dependencies
 
 Whenever you clone a new Laravel project you must now install all of the project dependencies. This is what actually installs Laravel itself, among other necessary packages to get started.
 
@@ -45,7 +45,7 @@ When we run composer, it checks the composer.json file which is submitted to the
 
 composer install
 
-### 5. Install NPM Dependencies
+### 4. Install NPM Dependencies
 
 Just like how we must install composer packages to move forward, we must also install necessary NPM packages to move forward. This will install Vue.js, Bootstrap.css, Lodash, and Laravel Mix.
 
@@ -57,14 +57,14 @@ or if you prefer yarn (as i do)
 
 yarn
 
-### 6. Create a copy of your .env file
+### 5. Create a copy of your .env file
 
 .env files are not generally committed to source control for security reasons. But there is a .env.example which is a template of the .env file that the project expects us to have. So we will make a copy of the .env.example file and create a .env file that we can start to fill out to do things like database configuration in the next few steps.
 
 cp .env.example .env
 
 This will create a copy of the .env.example file in your project and name the copy simply .env.
-### 7. Generate an app encryption key
+### 6. Generate an app encryption key
 
 Laravel requires you to have an app encryption key which is generally randomly generated and stored in your .env file. The app will use this encryption key to encode various elements of your application from cookies to password hashes and more.
 
@@ -73,15 +73,15 @@ Laravel’s command line tools thankfully make it super easy to generate this. I
 php artisan key:generate
 
 If you check the .env file again, you will see that it now has a long random string of characters in the APP_KEY field. We now have a valid app encryption key.
-### 8. Create an empty database for our application
+### 7. Create an empty database for our application
 
 Create an empty database for your project using the database tools you prefer (My favorite is SequelPro for mac). In our example we created a database called “test”. Just create an empty database here, the exact steps will depend on your system setup.
-### 9. In the .env file, add database information to allow Laravel to connect to the database
+### 8. In the .env file, add database information to allow Laravel to connect to the database
 
 We will want to allow Laravel to connect to the database that you just created in the previous step. To do this, we must add the connection credentials in the .env file and Laravel will handle the connection from there.
 
 In the .env file fill in the DB_HOST, DB_PORT, DB_DATABASE, DB_USERNAME, and DB_PASSWORD options to match the credentials of the database you just created. This will allow us to run migrations and seed the database in the next step.
-### 10. Migrate the database
+### 9. Migrate the database
 
 Once your credentials are in the .env file, now you can migrate your database.
 
