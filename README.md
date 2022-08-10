@@ -32,13 +32,7 @@ Once this runs, you will have a copy of the project on your computer.
 ### 2. cd into your project
 
 You will need to be inside that project file to enter all of the rest of the commands in this tutorial. So remember to type cd projectName to move your terminal working location to the project file we just barely created. (Of course substitute “projectName” in the command above, with the name of the folder you created in the previous step).
-### 3. [Optional]: Checkout the “Start” tag so you have a fresh install of the project (and not the final files)
 
-By default you have cloned the entire git repo, which will include the final project. If you are following another tutorial from DevMarketer, then I usually create a tag with git, that marks the beginning of the project so you can follow along with the tutorials on this site and my YouTube channel.
-
-Keep in mind that this step is optional because not all git repos will have a start tag, but most the tutorials that I create for you will have a start tag. Otherwise you can skip this step.
-
-Of course you want to start at the beginning so you can learn how to do that all on your own. So we need to use another git technique called “checkout” to checkout the beginning of the project so you have the same starting code that I have in the video, allowing you to follow along with me in the upcoming videos.
 
 
 
